@@ -52,8 +52,8 @@ const HeroSection = () => {
             className="w-full max-w-md h-auto animation-float"
           />
           
-          {/* Price Badge positioned in bottom right of image */}
-          <div className="absolute bottom-4 right-4">
+          {/* Price Badge positioned in bottom right of image, slightly rotated */}
+          <div className="absolute bottom-8 right-8 transform rotate-12">
             <div className="bg-green-badge text-green-badge-foreground rounded-full px-6 py-3 font-bold text-lg shadow-lg">
               FROM $12
             </div>
