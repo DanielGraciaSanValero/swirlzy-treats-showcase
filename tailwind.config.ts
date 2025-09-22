@@ -47,16 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+        /* Bakery-specific colors */
+        "blue-section": "hsl(var(--blue-section))",
+        "blue-section-foreground": "hsl(var(--blue-section-foreground))",
+        "orange-section": "hsl(var(--orange-section))",
+        "orange-section-foreground": "hsl(var(--orange-section-foreground))",
+        "green-badge": "hsl(var(--green-badge))",
+        "green-badge-foreground": "hsl(var(--green-badge-foreground))",
       },
       borderRadius: {
         lg: "var(--radius)",
