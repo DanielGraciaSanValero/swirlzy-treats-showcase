@@ -14,13 +14,6 @@ const HeroSection = () => {
               <br />
               EET!
             </h1>
-            
-            {/* Price Badge */}
-            <div className="relative inline-block">
-              <div className="bg-green-badge text-green-badge-foreground rounded-full px-6 py-3 font-bold text-lg shadow-lg">
-                FROM $12
-              </div>
-            </div>
           </div>
 
           {/* Subtitle */}
@@ -51,13 +44,20 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right Content - Hero Image */}
+        {/* Right Content - Hero Image with Price Badge */}
         <div className="relative flex items-center justify-center">
           <img 
             src={heroCookies} 
             alt="Stack of delicious cookies" 
             className="w-full max-w-md h-auto animation-float"
           />
+          
+          {/* Price Badge positioned in bottom right of image */}
+          <div className="absolute bottom-4 right-4">
+            <div className="bg-green-badge text-green-badge-foreground rounded-full px-6 py-3 font-bold text-lg shadow-lg">
+              FROM $12
+            </div>
+          </div>
         </div>
       </div>
 
