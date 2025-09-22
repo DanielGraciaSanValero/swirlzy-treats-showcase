@@ -7,9 +7,9 @@ const HeroSection = () => {
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          {/* Main Title - positioned behind cookies with lower z-index */}
-          <div className="space-y-2 relative z-0">
-            <h1 className="font-retro font-nunito text-6xl lg:text-8xl text-white leading-none">
+          {/* Main Title */}
+          <div className="space-y-2">
+            <h1 className="font-retro text-6xl lg:text-8xl text-white leading-none">
               SWEEE
               <br />
               EET!
@@ -17,12 +17,12 @@ const HeroSection = () => {
           </div>
 
           {/* Subtitle */}
-          <p className="text-white/90 text-lg relative z-10">
+          <p className="text-white/90 text-lg">
             Freshly crafted treats, made just for you
           </p>
 
           {/* Rating */}
-          <div className="flex items-center gap-4 relative z-10">
+          <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
               <Star className="w-5 h-5 text-yellow-400 fill-current" />
               <span className="text-white font-semibold">4.8</span>
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
 
           {/* Product Icons */}
-          <div className="flex gap-4 relative z-10">
+          <div className="flex gap-4">
             <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
               🍪
             </div>
@@ -44,16 +44,16 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right Content - Hero Image with animated price badge */}
-        <div className="relative flex items-center justify-center z-20">
+        {/* Right Content - Hero Image with Price Badge */}
+        <div className="relative flex items-center justify-center">
           <img 
             src={heroCookies} 
             alt="Stack of delicious cookies" 
-            className="w-full max-w-md h-auto animation-float relative z-30"
+            className="w-full max-w-md h-auto animation-float"
           />
           
-          {/* Price Badge with bounce animation inside the image */}
-          <div className="absolute bottom-8 right-8 transform rotate-12 animation-bounce-slow z-40">
+          {/* Price Badge positioned in bottom right of image, slightly rotated */}
+          <div className="absolute bottom-8 right-8 transform rotate-12">
             <div className="bg-green-badge text-green-badge-foreground rounded-full px-6 py-3 font-bold text-lg shadow-lg">
               FROM $12
             </div>
